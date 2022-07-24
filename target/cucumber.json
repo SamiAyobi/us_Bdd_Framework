@@ -1,0 +1,214 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 95629900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on Retail home Page",
+            "match": {
+              "location": "step.definitions.HomeStepDef.userIsOnRuser_is_on_retail_home_pageetailHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 104626400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user click on MyAccount",
+            "match": {
+              "location": "step.definitions.HomeStepDef.user_click_on_my_account()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 257370300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click on Login option",
+            "match": {
+              "location": "step.definitions.HomeStepDef.user_click_on_login_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 714422200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter userName \"test.test@yahoo.com\"  and password \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test.test@yahoo.com\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"123456\"",
+                  "offset": 56
+                }
+              ],
+              "location": "step.definitions.HomeStepDef.user_enter_user_name_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 493902000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on login button",
+            "match": {
+              "location": "step.definitions.HomeStepDef.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66450000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should be logged into myAccount Page",
+            "match": {
+              "location": "step.definitions.HomeStepDef.user_should_be_logged_into_my_account_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-09T23:53:32.517Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2792057700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step.definitions.Initializer.beforeHooks(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Edit your account Information",
+        "description": "",
+        "id": "retail-page-feature;edit-your-account-information",
+        "after": [
+          {
+            "result": {
+              "duration": 687858000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step.definitions.Initializer.afterHooks(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 612239300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User click on Edit your account information link",
+            "match": {
+              "location": "step.definitions.RetailStepDefinitions.user_click_on_edit_your_account_information_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1090968900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User modify below information",
+            "match": {
+              "location": "step.definitions.RetailStepDefinitions.user_modify_below_information(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "lastName",
+                  "email",
+                  "telephone"
+                ]
+              },
+              {
+                "cells": [
+                  "John",
+                  "Sean",
+                  "test.test@yahoo.com",
+                  "1012025588"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 448164200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User click on Continue button",
+            "match": {
+              "location": "step.definitions.RetailStepDefinitions.user_click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51925700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User should see a message \u0027Success: Your account has been successfully updated.\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Success: Your account has been successfully updated.\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "step.definitions.RetailStepDefinitions.user_should_see_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Retail Page Feature",
+    "description": "",
+    "id": "retail-page-feature",
+    "keyword": "Feature",
+    "uri": "classpath:feature/RetailScenario.feature",
+    "tags": []
+  }
+]
