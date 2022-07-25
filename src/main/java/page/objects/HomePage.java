@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import core.Base;
-
+//this is the import file from the base class.
 public class HomePage extends Base {
 	/**
 	 * In this class we will store all UI Elements that belongs to Home page of this
